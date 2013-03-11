@@ -8,6 +8,22 @@ The KickassSpider simply inherits Scrapy's framework BaseSpider and accepts two 
 category = the category of kickass torrents e.g books,comics etc
 keywords = comma separated list of keywords to search for
 
+How To
+------
+git clone git@github.com:arapidhs/scry.git
+cd <project dir>/kickass
+$ scrapy crawl kickass -a category=books -a keywords='python,java'
+
+Setup a cron job to keep scraping at intervals
+
+Prerequisites
+-------------
+sudo apt-get install python - Python 2.6 or 2.7
+Prerequisities for Scrapy
+sudo apt-get install python-dev - python dev libraries
+sudo apt-get install libxml2
+pip install Scrapy or easy_install Scrapy - Scrapy framework
+
 
 Usage
 -----
