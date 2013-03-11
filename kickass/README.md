@@ -5,8 +5,8 @@ The kickass spider scraps latest torrents for a given category from kickasstorre
 and matches them to a keyword list.
 
 The KickassSpider simply inherits Scrapy's framework BaseSpider and accepts two arguments:
-#category = the category of kickass torrents e.g books,comics etc
-#keywords = comma separated list of keywords to search for
+	category = the category of kickass torrents e.g books,comics etc
+	keywords = comma separated list of keywords to search for
 
 
 Usage
