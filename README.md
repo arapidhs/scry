@@ -21,6 +21,6 @@ Quick Start
 
 Example that runs the spider every morning at 09:00
 
-> 00 09 * * * cd ~/scry/kickass && \ 
+> 00 09 * * * export DISPLAY=:0.0 && cd ~/scry/kickass && \ 
 /usr/local/bin/scrapy crawl kickass -a category=books \ 
 -a keywords='python,java,sclala topics' >> ~/scrapy.log 2>&1
