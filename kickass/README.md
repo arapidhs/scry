@@ -5,8 +5,8 @@ The kickass spider scraps latest torrents for a given category from kickasstorre
 and matches them to a keyword list.
 
 The KickassSpider simply inherits Scrapy's framework BaseSpider and accepts two arguments:
-	category = the category of kickass torrents e.g books,comics etc
-	keywords = comma separated list of keywords to search for
+category = the category of kickass torrents e.g books,comics etc
+keywords = comma separated list of keywords to search for
 
 
 Usage
@@ -20,12 +20,10 @@ From the command line type
 crontab -e
 and add the following line to run the spider every 20 minutes
 */20 * * * * cd /home/charalampos/development/scrapy/kickass &&  \ 
-/usr/local/bin/scrapy crawl kickass -a category=books -a keywords='python,java,sclala topics' \ 
->> ~/scrapy.log 2>&1
+/usr/local/bin/scrapy crawl kickass -a category=books -a keywords='python,java,sclala topics' >> ~/scrapy.log 2>&1
 
 Another example that runs every morning at 09:00
 00 09 * * * cd /home/charalampos/development/scrapy/kickass &&  \ 
-/usr/local/bin/scrapy crawl kickass -a category=books -a keywords='python,java,sclala topics' \ 
->> ~/scrapy.log 2>&1
+/usr/local/bin/scrapy crawl kickass -a category=books -a keywords='python,java,sclala topics' >> ~/scrapy.log 2>&1
 
 
