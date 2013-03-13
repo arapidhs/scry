@@ -15,6 +15,11 @@ then
     usage
 fi
 
+mkdir -p torrents
 name=`echo $1 | sed 's/.*kat.ph.//'`".torrent"
-curl --globoff --compressed -A '$AGENT' -L --post302 $1 > $name
+curl --globoff --compressed -A '$AGENT' -L --post302 $1 > 'torrents/'$name'.tmp'
+cd torrents && mv $name'.tmp' $name
 transmission -m $name
+
+
+
