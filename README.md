@@ -29,3 +29,13 @@ Email an hourly updated list of downloading torrents and search results via cron
 
 > 0 */1 * * * cd ~/development/scrapy/kickass && ~/development/scrapy/kickass/mail.sh
 
+Installing Scrapy
+-----------------
+- sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 627220E7
+- echo 'deb http://archive.scrapy.org/ubuntu scrapy main' | sudo tee /etc/apt/sources.list.d/scrapy.list
+- sudo apt-get update && sudo apt-get install scrapy-0.24
+
+Official installation instructions
+http://doc.scrapy.org/en/latest/intro/install.html#intro-install-platform-notes
+
+
