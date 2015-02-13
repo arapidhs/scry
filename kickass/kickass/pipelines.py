@@ -28,7 +28,7 @@ class TorrentPipeline(object):
 		subprocess.call(['./curl_torrent.sh',path])
 
 	def exists(self, title):
-		for line in open('torrents/torrents.log','r+'):
+		for line in open('torrents/torrents.log','a+'):
 			if title in line:
 				return True
 		return False
