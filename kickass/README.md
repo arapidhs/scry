@@ -29,7 +29,7 @@ Python and Scrapy framework
 Usage
 -----
 - Navigate within the project's directory e.g. kickass and run scrapy, for example:
-- scrapy crawl kickass -a category=books -a keywords='python,java,sclala topics'
+- scrapy crawl kickass -a category=books -a keywords='python,java,scala topics'
 
 Setup a cron job to have the spider run at intervals:
 
