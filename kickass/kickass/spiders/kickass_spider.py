@@ -34,13 +34,13 @@ class KickassSpider(Spider):
 			print(item['title'])
 			for s in self.keywords:
 				if s.lower() in item['title'][0].lower():
-					item['url'] = entry.select('td[1]/div[1]/a[3]/@href').extract()
-					item['torrent'] = entry.select('td[1]/div[1]/a[starts-with(@title,"Download torrent file")]/@href').extract()
-					item['size'] = entry.select('td[2]/text()[1]').extract()
-					item['sizeType'] = entry.select('td[2]/span/text()').extract()
+					item['url'] = entry.xpath('td[1]/div[1]/a[3]/@href').extract()
+					item['torrent'] = entry.xpath('td[1]/div[1]/a[starts-with(@title,"Download torrent file")]/@href').extract()
+					item['size'] = entry.xpath('td[2]/text()[1]').extract()
+					item['sizeType'] = entry.xpath('td[2]/span/text()').extract()
 					item['age'] = entry.xpath('td[4]/text()').extract()
-					item['seed'] = entry.select('td[5]/text()').extract()
-					item['leech'] = entry.select('td[6]/text()').extract()					
+					item['seed'] = entry.xpath('td[5]/text()').extract()
+					item['leech'] = entry.xpath('td[6]/text()').extract()					
 					items.append(item)
 					break			
 		return items
