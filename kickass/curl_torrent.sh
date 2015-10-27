@@ -17,10 +17,11 @@ fi
 
 mkdir -p torrents
 name=`echo $1 | sed 's/.*kickass.to.//'`".torrent"
-echo $name
-curl --globoff --compressed -A '$AGENT' -L --post302 $1 > 'torrents/'$name'.tmp'
-cd torrents && mv $name'.tmp' $name
-transmission-gtk -m $name & 
+#url=`echo $1 | cut -c3-`
+echo $name='torrents/kickass.torrent.tmp'
+curl --globoff --compressed -A '$AGENT' -L --post302 $1 > 'torrents/kickass.torrent' 
+cd 'torrents'
+transmission-gtk -m 'kickass.torrent' & 
 
 
 
