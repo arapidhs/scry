@@ -4,3 +4,7 @@
 *.tmp
 
 torrents/**
+mobygames/files/**
+mobygames/mobygames/files/**
+mobygames/patch-launchbox/**
+

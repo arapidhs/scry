@@ -19,3 +19,9 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 1 # 	Default: 8
 LOG_ENABLED = True
 LOG_LEVEL = 'DEBUG' #	Levels: CRITICAL, ERROR, WARNING, INFO, DEBUG
 LOG_FILE = './kickass.log'
+
+# Disable Amazon S3 download handler
+DOWNLOAD_HANDLERS = {
+    's3': None,
+        }
+        
