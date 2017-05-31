@@ -1,0 +1,45 @@
+import scrapy
+
+
+class MobygamesItem(scrapy.Item):
+	url = scrapy.Field()
+	title = scrapy.Field()
+	source = scrapy.Field()
+	romname = scrapy.Field()
+	platform = scrapy.Field()
+	platforms = scrapy.Field()
+	exclusive = scrapy.Field()
+	region = scrapy.Field()
+	date = scrapy.Field()
+	publisher = scrapy.Field()    
+	developer = scrapy.Field()
+	description = scrapy.Field()
+	rating = scrapy.Field()
+	genre = scrapy.Field()
+	presentation = scrapy.Field()
+	perspective = scrapy.Field()
+	visual = scrapy.Field()
+	vehicular = scrapy.Field()
+	pacing = scrapy.Field()
+	pacing = scrapy.Field()
+	gameplay = scrapy.Field()
+	setting = scrapy.Field()
+	sport = scrapy.Field()
+	theme = scrapy.Field()
+	misc = scrapy.Field()
+	group = scrapy.Field()
+	criticScore = scrapy.Field()
+	userScore = scrapy.Field()
+	mature = scrapy.Field()
+	licensed = scrapy.Field()
+		
+	images = scrapy.Field()
+	image_urls = scrapy.Field()
+	
+	search_title = scrapy.Field()
+	search_region = scrapy.Field()
+	search_platform = scrapy.Field()
+	screenshot_urls = scrapy.Field()
+	cover_urls = scrapy.Field()
+	
+	pass
