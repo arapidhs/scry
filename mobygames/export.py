@@ -1,7 +1,8 @@
 from mobygames.spiders.mobygames_spider import MobygamesSpider
 from mobygames.items import MobygamesItem
 from mobygames.exporter import Exporter 
-s = Exporter('/home/charalampos/gba-parent-clone.dat')
+from mobygames.exporterfromlist import ExporterFromList 
+
 
 # Genesis
 #s = Exporter('/home/charalampos/sega-megadrive-parent-clone.xml')
@@ -21,3 +22,9 @@ s = Exporter('/home/charalampos/gba-parent-clone.dat')
 
 # Gameboy Advance
 #s = Exporter('/home/charalampos/gba-parent-clone.dat')
+
+# Export from txt list file,
+# each line is a title name
+# s = ExporterFromList('/home/charalampos/gba-parent-clone.dat','Genesis','JPN')
+s = ExporterFromList('/home/charalampos/dev/src/scry/mobygames/files/sega-mega-drive-missing/sega-mega-drive-missing.txt','Genesis')
+

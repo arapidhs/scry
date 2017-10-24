@@ -13,9 +13,9 @@ ITEM_PIPELINES = {
 
 	}
 	
-FILES_STORE = './files/gba'
+FILES_STORE = './files/sega-mega-drive-missing'
 
-IMAGES_STORE = './files/gba/images'
+IMAGES_STORE = './files/sega-mega-drive-missing/images'
 
 # max number of screenshots to download per game
 MAX_SCREENSHOTS = 6
@@ -32,7 +32,8 @@ FEED_EXPORT_FIELDS = [
 	"criticScore",	"userScore", 	"images",
 	"image_urls",	"file",			"file_urls",
 	"visual",		"presentation",	"pacing", 
-	"vehicular",	"gameplay"
+	"vehicular",	"gameplay", 	"narrative",	
+	"addon",	"educational"
 ]
 
 # 30 days of delay for images expiration
