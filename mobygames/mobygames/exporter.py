@@ -18,6 +18,8 @@ from twisted.internet import reactor
 
 from spiders.mobygames_spider import MobygamesSpider
 
+# parsers a roms xml datfile, extracts titles and regions
+# and sends the constructed urls to mobygames spider for scraping
 class Exporter:
 
 	global platforms

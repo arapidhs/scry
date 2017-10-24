@@ -1,14 +1,52 @@
-# -*- coding: utf-8 -*-
-
-# Define here the models for your scraped items
-#
-# See documentation in:
-# http://doc.scrapy.org/en/latest/topics/items.html
-
 import scrapy
 
 
 class CpcpowerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+#	url = scrapy.Field()
+	title = scrapy.Field()
+	source = scrapy.Field()
+#	romname = scrapy.Field()
+	platform = scrapy.Field()
+#	platforms = scrapy.Field()
+#	exclusive = scrapy.Field()
+	region = scrapy.Field()
+	typeins = scrapy.Field()
+	year = scrapy.Field()
+	date = scrapy.Field()
+	publisher = scrapy.Field()    
+	players = scrapy.Field()
+#	developer = scrapy.Field()
+#	description = scrapy.Field()
+#	rating = scrapy.Field()
+	genre = scrapy.Field()
+	categories = scrapy.Field()
+#	presentation = scrapy.Field()
+#	perspective = scrapy.Field()
+	visual = scrapy.Field()
+#	vehicular = scrapy.Field()
+	pacing = scrapy.Field()
+#	pacing = scrapy.Field()
+	gameplay = scrapy.Field()
+	educational = scrapy.Field()
+	addon = scrapy.Field()
+	narrative = scrapy.Field()
+#	setting = scrapy.Field()
+	sport = scrapy.Field()
+#	theme = scrapy.Field()
+	misc = scrapy.Field()
+	group = scrapy.Field()
+	criticScore = scrapy.Field()
+#	userScore = scrapy.Field()
+#	mature = scrapy.Field()
+#	licensed = scrapy.Field()
+		
+	images = scrapy.Field()
+	image_urls = scrapy.Field()
+	
+	search_num = scrapy.Field()
+#	search_region = scrapy.Field()
+#	search_platform = scrapy.Field()
+	screenshot_urls = scrapy.Field()
+#	cover_urls = scrapy.Field()
+	
+	pass

@@ -33,22 +33,22 @@ IMAGES_EXPIRES = 30
 FEED_EXPORT_FIELDS = [
 	"url",          "title",        "platform",
 	"region",       "publisher",    "developer",
-	"date",         "rating",       "genre",
+	"year",         "rating",       "genre",
 	"perspective",  "theme",        "sport",
 	"misc",         "group",        "description",
 	"criticScore",  "userScore",    "images",
 	"image_urls",   "file",         "file_urls",
 	"visual",       "presentation", "pacing",
 	"vehicular",    "gameplay",		"typeins",
-	"players",		"educational",	"addon",
-	"narrative"
+	"players"
 ]
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
+#USER_AGENT = 'cpcpower (+http://www.yourdomain.com)'
 USER_AGENT = 'http://www.cpc-power.com'
-DOWNLOAD_DELAY = 0.5
-RANDOMIZE_DOWNLOAD_DELAY = True
-CONCURRENT_REQUESTS_PER_DOMAIN = 2 #    Default: 8
+DOWNLOAD_DELAY = 0.25
+RANDOMIZE_DOWNLOAD_DELAY = False
+CONCURRENT_REQUESTS_PER_DOMAIN = 1 #    Default: 8
 
 LOG_ENABLED = True
 LOG_STDOUT = True
