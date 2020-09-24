@@ -6,6 +6,11 @@ Web scraping engines with Python and Scrapy
 Implemented Engines
 ==================
 
+Engine: Mobygames / cpcpower
+---------------
+Automatically crawl and download metadata from mobygames / cpc-power for a single platform
+including images.
+
 Engine: kickass
 ---------------
 Automatically perform category / keyword searches at kickasstorrents.com 
