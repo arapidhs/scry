@@ -11,6 +11,10 @@ Engine: Mobygames / cpcpower
 Automatically crawl and download metadata from mobygames / cpc-power for a single platform
 including images.
 
+Quick Start
+- cd /mobygames
+- $ scrapy crawl mobygames -platform=snes
+
 Engine: kickass
 ---------------
 Automatically perform category / keyword searches at kickasstorrents.com 
@@ -18,7 +22,6 @@ and queue them for download with transmission bit torrent client.
 Setup a cron job to completely automate torrent searching and downloading.
 
 Quick Start
------------
 - git clone git@github.com:arapidhs/scry.git
 - cd /kickass
 - $ scrapy crawl kickass -a category=books -a keywords='python,java'
